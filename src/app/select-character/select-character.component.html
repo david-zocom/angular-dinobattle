@@ -1,0 +1,28 @@
+<div class="select-character">
+	<h3>Choose fighter!</h3>
+	<ul>
+		<app-character-info
+			*ngFor="let dino of dinos"
+			[name]="dino.name"
+			[minPower]="dino.minPower"
+			[maxPower]="dino.maxPower"
+			(onSelected)="selectedCharacter($event)"
+		></app-character-info>
+
+		<!-- <li> Tyrannosaurus Rex - 100-120 </li>
+		<li> Bracchiosaurus - 30-50 </li>
+		<li> Triceratops - 70-110 </li> -->
+	</ul>
+	<div *ngIf="!selectedDino">
+		No dinosaur selected :(
+	</div>
+	<div *ngIf="selectedDino">
+		You have chosen: {{ selectedDino.name }}
+	</div>
+</div>
+
+
+
+
+
+<!--  -->

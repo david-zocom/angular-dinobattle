@@ -1,0 +1,12 @@
+/* more magic for buttons <3 */
+button {
+	font-size: 1.3em;
+	padding: 0.3em 1em;
+	color: #fff;
+	background: linear-gradient(to bottom, #16041a 50%,#330e3a 51%);
+   transition: 3s;
+   border: 3px solid #000;
+   display: block;
+   margin: 1.5em auto;
+}
+button::after, button::before { content: '️‍ 🦄 '; }

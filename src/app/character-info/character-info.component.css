@@ -1,0 +1,17 @@
+li {
+   list-style: none;
+   font-size: 1.2em;
+   padding: 0.3em 0;
+   /* color: #fff; */
+}
+ul:nth-child(even), ol:nth-child(even) {
+   background-color: rgb(240, 240, 240);
+}
+li:hover::after, li:hover::before { content: '️ ✨ '; }
+
+/* magic */
+/* li:before {
+   color: #000;
+   content: 'Unicorn - Over 9000';
+} */
+/* magic */
